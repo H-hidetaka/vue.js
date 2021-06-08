@@ -6,13 +6,14 @@
 </head>
 <body>
   <div id="app">
-    <p>{{ message }}</p>
+    <!-- {{}}構文がそのまま表示される　Mustache構文としてではなく文字列として表示 -->
+    <p v-pre>{{ message }}</p>
   </div>
-
+  <script src="lib/vue.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 	<!-- <script src="js/template.js"></script> -->
-  <script src="js/hello.js"></script>
   <script>window.Vue || document.write('<script src="lib/vue.min.js">
   <\/script>');</script>
+  <script src="js/hello.js"></script>
 </body>
 </html>
