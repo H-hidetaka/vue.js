@@ -1,6 +1,9 @@
 new Vue({
   el: '#app',
   data: {
-    mails: [],
-  }
+    //パネルの表示状態を表すフラグ
+    show: true,
+    mail: []
+  },
+
 });
