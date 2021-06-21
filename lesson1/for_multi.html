@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+<link rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+</head>
+<body>
+<div id="app">
+  <template v-for="s in songs">
+    <header>{{ s.title }}</header>
+    <div>{{ s.lyrics }}</div>
+    <footer>{{ s.composer }} 作曲</footer>
+  </template>
+  <!-- <table class = "table">
+    <span v-for="i in 5">{{ i * 2 }}</span>
+    <th>ISBN</th><th>書名</th><th>価格</th>
+    <tr v-for="b in expensiveBooks">
+    <tr v-for="b in books" v-if="b.price >= 2500">
+      <td>{{ i + 1 }}</td>
+      <td>{{ b.isbn }}</td>
+      <td>{{ b.title }}</td>
+      <td>{{ b.price }}</td>
+    </tr>
+  </table> -->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+<script src="js/for_multi.js"></script>
+</body>
+</html>
