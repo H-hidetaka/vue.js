@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+<link rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+</head>
+<body>
+<div id="app">
+  <form v-on:submit="onsubmit">
+    <label for="email">メールアドレス：</label>
+    <input id="email" name="email" type="email" />
+    <input type="submit" value="送信" />
+  </form>
+  <!-- <div class="small" v-bind:class="[colorClass, { frame: isChange }]">
+    みなさん、こんにちは！
+  </div> -->
+  <!-- <a v-bind:style="{ 'tap-highlight-color': 'Aqua' }" v-bind:href="url">
+    {{ url }}
+  </a> -->
+  <!-- <form>
+    <label for="name">氏名：</label>
+    <input type="text" id="name" v-model="name" />
+  </form>
+  <div v-once>初めまして {{ name }} さん。</div>
+  <div>初めまして、 {{ name }} さん。</div> -->
+  <!-- <select v-model="attr">
+    <option value="height">高さ</option>
+    <option value="width">幅</option>
+  </select>
+  <input type="text" size="5" v-model="size" /><br />
+  <img src="https://wings.msn.to/image/wings.jpg" v-bind:[attr]="size" /> -->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+<script src="js/event_submit.js"></script>
+</body>
+</html>
